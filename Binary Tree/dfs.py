@@ -13,9 +13,9 @@ class Node:
 
 class Tree:
     def __init__(self):
-        self.root = None  # You had `def __init__(self, data)` — not required for general tree
+        self.root = None  
 
-    def insertNode(self, root, data):  # Need to use @staticmethod or make it an external function
+    def insertNode(self, root, data):  
         if root is None:
             return Node(data)
         elif root.data < data:
@@ -26,7 +26,7 @@ class Tree:
 
     def dfs(self, root):
         if not root:
-            return
+            return 
         
         stack = [root]
 

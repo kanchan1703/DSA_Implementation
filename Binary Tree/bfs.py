@@ -8,9 +8,9 @@ class Node:
 
 class Tree:
     def __init__(self):
-        self.root = None  # You had `def __init__(self, data)` — not required for general tree
+        self.root = None  
 
-    def insertNode(self, root, data):  # Need to use @staticmethod or make it an external function
+    def insertNode(self, root, data):  
         if root is None:
             return Node(data)
         elif root.val < data:
@@ -28,8 +28,7 @@ class Tree:
 
         while queue:
             node = queue.popleft()
-            print(node.val, end=' ')  # Use node.val instead of node.data
-
+            print(node.data, end=' ') 
             if node.left:
                 queue.append(node.left)
             if node.right:
